@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="./assets/logo.png" class="logo">
     <router-view/>
+    <div class="footer">
+      <router-link tag="div" to="/">首页</router-link>
+      <router-link tag="div" to="/store">商城</router-link>
+    </div>
   </div>
 </template>
 
@@ -20,4 +24,7 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+  .logo{
+    width: 100px;
+  }
 </style>

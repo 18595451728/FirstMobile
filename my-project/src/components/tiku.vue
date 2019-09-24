@@ -1,8 +1,6 @@
 <template>
     <div class="container">
-        <div class="header">
-            <img src="http://rongyuejiaoyu.com/static/mobile/images/icon_return.png" alt="">
-        </div>
+
         <div class="thumb">
             <img src="http://rongyuejiaoyu.com/static/mobile/images/icon_kids.png" alt="">
         </div>
@@ -24,60 +22,52 @@
             <div class="CFA">
                 <h6>CFA题库</h6>
                 <div class="cfalist">
-                    <div class="list">一级</div>
-                    <div class="list">二级</div>
-                    <div class="list">三级</div>
+                    <router-link tag="div" to="/question?cid=690" class="list">一级</router-link>
+                    <router-link tag="div" to="/question?cid=691" class="list">二级</router-link>
+                    <router-link tag="div" to="/question?cid=692" class="list">三级</router-link>
                 </div>
             </div>
         </div>
+        <deep></deep>
     </div>
 </template>
 
 <script>
+    import deep from './model/deep.vue'
+
     export default {
         name: "tiku",
-        data:function(){
+        components: {
+            deep
+        },
+        data: function () {
             return {
-                aaa:''
+                aaa: ''
             }
         },
         mounted() {
             console.log(this.$route.query.aaa)
             this.aaa = this.$route.query.aaa
         },
-        methods:{
-
-        }
+        methods: {}
     }
 </script>
 
 <style scoped>
-    .header{
-        position: fixed;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 85px;
-        padding: 21px 28px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-    .header img{
-        width: 23px;
-        height: 42px;
-    }
-    .thumb img{
+
+    .thumb img {
         width: 100%;
         height: 420px;
     }
-    .thumb-c{
+
+    .thumb-c {
         width: 100%;
         height: 100%;
         padding-top: 100px;
         position: relative;
     }
-    .thumb-con{
+
+    .thumb-con {
         width: 684px;
         height: 180px;
         background: #fff;
@@ -97,47 +87,56 @@
         justify-content: space-between;
         align-items: center;
     }
-    .thumb-con div{
+
+    .thumb-con div {
         text-align: center;
     }
-    .thumb-con div p{
+
+    .thumb-con div p {
         font-size: 28px;
         color: #333;
     }
-    .thumb-con div:nth-child(1) img{
+
+    .thumb-con div:nth-child(1) img {
         width: 67px;
         height: 77px;
     }
-    .thumb-con div:nth-child(2) img{
+
+    .thumb-con div:nth-child(2) img {
         width: 76px;
         height: 77px;
     }
-    .thumb-con div:nth-child(3) img{
+
+    .thumb-con div:nth-child(3) img {
         width: 86px;
         height: 77px;
     }
-    .CFA{
+
+    .CFA {
         padding: 0 40px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
-    .CFA h6{
+
+    .CFA h6 {
         font-weight: 400;
         font-size: 30px;
         color: #303030;
         margin: 45px 0 25px 0;
     }
-    .cfalist{
+
+    .cfalist {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .list{
+
+    .list {
         width: 206px;
         height: 72px;
         line-height: 72px;
-        background: #ecf4ff;
+        background: #ecf7ef;
         font-size: 26px;
         text-align: center;
         -webkit-border-radius: 40px;
@@ -146,5 +145,6 @@
         float: left;
         display: inline;
         margin: 0 20px 20px 0;
+        color: #49a45e;
     }
 </style>

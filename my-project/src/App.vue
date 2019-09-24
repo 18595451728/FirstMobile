@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <router-view/>
-    <div class="footer">
-      <router-link tag="div" to="/">首页</router-link>
-      <router-link tag="div" to="/store">商城</router-link>
-      <router-link tag="div" to="/tiku?aaa=112">题库</router-link>
-      <router-link tag="div" to="/mine">我的</router-link>
-    </div>
+    <!--<div class="footer">-->
+      <!--<router-link tag="div" to="/">首页</router-link>-->
+      <!--<router-link tag="div" to="/store">商城</router-link>-->
+      <!--<router-link tag="div" to="/tiku">题库</router-link>-->
+      <!--<router-link tag="div" to="/mine">我的</router-link>-->
+    <!--</div>-->
   </div>
 </template>
 

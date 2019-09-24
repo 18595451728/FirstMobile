@@ -1,10 +1,17 @@
 <template>
-    <h1>个人中心</h1>
+    <div>
+        <h1>个人中心</h1>
+        <deep></deep>
+    </div>
 </template>
 
 <script>
+    import deep from './model/deep'
     export default {
-        name: "mine"
+        name: "mine",
+        components:{
+            deep
+        }
     }
 </script>
 

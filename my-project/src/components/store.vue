@@ -1,10 +1,17 @@
 <template>
-    <h1>STORE</h1>
+    <div>
+        <h1>STORE</h1>
+        <deep></deep>
+    </div>
 </template>
 
 <script>
+    import deep from './model/deep'
     export default {
-        name: "store"
+        name: "store",
+        components:{
+            deep
+        }
     }
 </script>
 

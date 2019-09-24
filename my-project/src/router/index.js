@@ -5,6 +5,7 @@ import store from '@/components/store'
 import index from '@/components/index'
 import tiku from '@/components/tiku'
 import mine from '@/components/mine'
+import question from '@/components/question'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
             path: '/mine',
             name: 'mine',
             component: mine
+        },
+        {
+            path: '/question',
+            name: 'question',
+            component: question
         }
     ]
 })

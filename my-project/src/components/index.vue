@@ -3,6 +3,7 @@
         <router-link tag="div" to="/hello">111</router-link>
         <h1>222</h1>
         <deep></deep>
+        {{$store.state.count}}
     </div>
 </template>
 

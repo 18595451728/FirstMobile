@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from '../node_modules/axios'
+import store from './vuex/store'
 import 'lib-flexible/flexible'
 
 Vue.prototype.$axios = axios
@@ -12,9 +13,10 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  axios,
-  components: { App },
-  template: '<App/>'
+    el: '#app',
+    router,
+    axios,
+    store,
+    components: {App},
+    template: '<App/>'
 })

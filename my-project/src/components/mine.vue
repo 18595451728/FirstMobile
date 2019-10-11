@@ -6,7 +6,6 @@
         <div @click="add()" class="changenum">加</div>
         <div @click="reduce()" class="changenum">减</div>
         <div @click="yibu()" class="changenum">异步减</div>
-
     </div>
 </template>
 

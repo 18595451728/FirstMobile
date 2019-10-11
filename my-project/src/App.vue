@@ -1,12 +1,6 @@
 <template>
   <div id="app">
     <router-view/>
-    <!--<div class="footer">-->
-      <!--<router-link tag="div" to="/">首页</router-link>-->
-      <!--<router-link tag="div" to="/store">商城</router-link>-->
-      <!--<router-link tag="div" to="/tiku">题库</router-link>-->
-      <!--<router-link tag="div" to="/mine">我的</router-link>-->
-    <!--</div>-->
   </div>
 </template>
 
@@ -31,20 +25,10 @@ export default {
   color: #2c3e50;
 }
 
-  .footer{
-    width: 750px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    line-height: 100px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    font-size: 30px;
-    border-top: 1px solid #eee;
-  }
-  .footer>div{
-    width: 25%;
-    text-align: center;
+ul{
+  list-style: none;
+}
+  a{
+    text-decoration: none;
   }
 </style>

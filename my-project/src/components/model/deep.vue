@@ -6,7 +6,6 @@
         <router-link tag="div" to="/mine">我的</router-link>
     </div>
 </template>
-s
 <script>
     export default {
         name: "deep"
@@ -25,9 +24,14 @@ s
         bottom: 0;
         font-size: 30px;
         border-top: 1px solid #eee;
+        background: #fff;
+        z-index: 999;
     }
     .footer>div{
         width: 25%;
         text-align: center;
+    }
+    .router-link-exact-active{
+        color: red;
     }
 </style>

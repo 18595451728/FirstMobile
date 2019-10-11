@@ -6,6 +6,7 @@ import index from '@/components/index'
 import tiku from '@/components/tiku'
 import mine from '@/components/mine'
 import question from '@/components/question'
+import detail from '@/components/detail'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
             path: '/question',
             name: 'question',
             component: question
+        },
+        {
+            path: '/detail',
+            name: 'detail',
+            component: detail
         }
     ]
 })
